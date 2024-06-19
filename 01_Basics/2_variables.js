@@ -25,3 +25,7 @@ console.log(mail);
 password=678910
 city="Bihar"
 console.table([id,mail,password,city,state])
+
+
+
+
