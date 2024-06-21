@@ -60,8 +60,8 @@ console.table([
      /      |        |        |       |         |        \                  /       |        \    
  number  string    null     symbol   undefined  bigint  boolean           array   function    object
 
- //PRIMITIVES ARE CALL BY VALUES
- 
+ PRIMITIVES ARE CALL BY VALUES THESE USE STACK MEMORY
+ REFERENCE ARE CALL BY REFERENCE AND USE HEAP MEMORY 
 
  number -- any decimal,integer, exponential(123e5)
  string 
