@@ -54,11 +54,13 @@ console.table([
 
 
   /*OVERALL SUMMARY--
-  WE HAVE CLASSIFIED TWO TYPES OF DATATYPES IN JS
-                   /                                     \
-                  primitive                              reference
-     /      |        |      |         |        \           /    \
- number  string    null   undefined  bigint  boolean    array   object
+  WE HAVE CLASSIFIED TWO TYPES OF DATATYPES IN JS ON THE BASIS OF THEIR ORGANIZATION IN MEMORY
+                   /                                                \
+                  primitive                                    reference{or non-primitive}
+     /      |        |        |       |         |        \                  /       |        \    
+ number  string    null     symbol   undefined  bigint  boolean           array   function    object
+
+ //PRIMITIVES ARE CALL BY VALUES
  
 
  number -- any decimal,integer, exponential(123e5)
