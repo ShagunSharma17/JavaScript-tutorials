@@ -10,15 +10,17 @@ const jsUser={
     name:"Shagun",
     age:21,
     location:"Delhi", 
-    //mysym:key1 will work as string not as symbol
-    [mysym]: "myKey1"
+    //"mysym:key1" will work as string not as symbol
+    [mysym]: "valueofsymbol"//this assigns the value to above created object of symbol
+
 }
 
 //accessing-->
 console.log(jsUser.age);
 console.log(jsUser["name"]);
 console.log(jsUser["full name"]);
-console.log(jsUser[mysym]);
+//doubt-> console.log(jsUser.mysym);//this returns undefined 
+console.log(jsUser[mysym]);//this returns assigned value of mysym
 
 
 jsUser.age=20//overwriting values
@@ -37,11 +39,12 @@ jsUser.greeting = function(){
     console.log("hello--this is jsUser object with a function to access");
 }
 console.log(jsUser.greeting);//returns the reference of function [Function (anonymous)]
-console.log(jsUser.greeting());//returns error and says not a function because of freeze and shows undefined too
+console.log(jsUser.greeting());//returns error and says not a function because of freeze and shows undefined when unfreezed
 
 
 //jsUser object ke andar jo name hai usse reference krna hai toh--
 
 jsUser.anotherGreeting =function(){
-    console.log(`hello, ${this.name}`);
+    console.log(`THIS IS ANOTHER FUNCTION WITH THIS KEYWORD, ${this.name}`);
 } 
+console.log(jsUser.anotherGreeting());
